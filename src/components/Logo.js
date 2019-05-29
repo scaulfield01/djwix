@@ -3,10 +3,7 @@ import ReactDOM from 'react-dom';
 import TweenLite from "gsap/TweenMax";
 
 class Logo extends Component {
-	constructor(props){
-		
-	}
-	compnentDidMount() {
+	componentDidMount() {
 		var svg = document.querySelector("#svg");
 		var mouse = svg.createSVGPoint();
 
