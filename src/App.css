@@ -22,6 +22,14 @@
 .App-link {
   color: #61dafb;
 }
+.cls-1{fill:#009098;}
+.cls-2{fill:#033;}
+.cls-3{fill:#c0dee0;}
+.cls-4{fill:#484848;}
+.cls-5{fill:#ccc;}
+.eye-inner{fill:#ccc;}
+.eye-outer{fill:#5c5c5c;}
+
 
 @keyframes App-logo-spin {
   from {
