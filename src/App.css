@@ -30,12 +30,10 @@
 .eye-inner{fill:#ccc;}
 .eye-outer{fill:#5c5c5c;}
 
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Logo-Box {
+    height: 75%;
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
 }
+
