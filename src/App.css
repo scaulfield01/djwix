@@ -1,27 +1,10 @@
 .App {
   text-align: center;
+  background: url(./img/skyline.png) no-repeat;
+  /*height: 100vh;*/
+  background-size: cover;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 .cls-1{fill:#009098;}
 .cls-2{fill:#033;}
 .cls-3{fill:#c0dee0;}
@@ -30,10 +13,127 @@
 .eye-inner{fill:#ccc;}
 .eye-outer{fill:#5c5c5c;}
 
+.Logo-Container {
+  display: flex;
+  background-size: 100%;
+  flex-direction: row;
+}
+
+.Menu {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Menu-button-box {
+  height: 50vh;
+}
+
+.AboutMe-container{
+  color: black;
+}
+
 .Logo-Box {
-    height: 75%;
-    width: 50%;
+    height: 100%;
+    /*width: 41em;*/
+    width: 100%;
     margin: auto;
-    margin-top: 2em;
+    padding: 2em;
+}
+
+
+#hex1 {
+  width: 75px;
+  height: 75px;
+}
+
+#color1 {
+  background-color: #39D; 
+}
+
+#color2 {
+  background-color: #93D;
+}
+
+#color3 {
+  background-color: #D93;
+}
+
+.hexagon-wrapper {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.hexagon-wrapper-paragrapgh {
+  z-index: 2;
+  position: relative;
+  top: 12%;
+  font-size: 2em;
+  transition: all .2s ease-in-out;
+}
+
+.hexagon {
+  height: 100%;
+  width: calc(100% * 0.57735);
+  display: inline-block;
+}
+
+.hexagon-wrapper-paragrapgh:hover{
+  transform: scale(1.1);
+  text-shadow:0px 0px 30px #fdec6e;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+
+
+.hexagon:before {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(60deg);
+}
+
+.hexagon:after {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(-60deg);
+}
+
+.menu-container {
+  height: 100vh;
+  display: inline-block;
+}
+
+
+@media (min-width: 768px){
+  #About {    
+    -webkit-transform: rotate(-115deg) translate(14em) rotate(115deg);
+    transform: rotate(-115deg) translate(14em) rotate(115deg);
+  }
+  #Contact{
+    -webkit-transform: rotate(-90deg) translate(10em) rotate(90deg);
+    transform: rotate(-90deg) translate(2em) rotate(90deg);
+  }
+  #Gallery{
+    -webkit-transform: rotate(115deg) translate(-14em) rotate(-115deg);
+    transform: rotate(115deg) translate(-14em) rotate(-115deg);
+  } 
 }
 
