@@ -18,36 +18,36 @@ class App extends Component {
 		switch(this.state.view) {
 		  case "Home":
 		    elementToShow = (
-  	    	<div className="menu-container">
+  	    	<div>
   					<Logo/>
   					<MenuHexagonButton handleClick={this.handleClick}/>
   	    	</div>
 		    );
 		    break;
-		  case "About":
+		  case "about":
 		    elementToShow = (
-		    	<div className="menu-container">
+		    	<div>
 		    		<AboutMe handleClick={this.handleClick}/>
 		    	</div>
 		    );
 		    break;
-		  case "Contact":
+		  case "contact":
 		    elementToShow = (
-		    	<div className="menu-container">
+		    	<div>
 		    		<ContactForm handleClick={this.handleClick}/>
 		    	</div>
 		    );
 		    break;
-		  case "Gallery":
+		  case "media":
 		    elementToShow = (
-					<div className="menu-container">
+					<div>
 		    		<Gallery handleClick={this.handleClick}/>
 		    	</div>
 		    );
 		    break;
 		  default:
 				elementToShow = (
-					<div className="menu-container">
+					<div>
 						<Logo/>
 						<MenuHexagonButton handleClick={this.handleClick}/>
 					</div>
@@ -61,7 +61,8 @@ class App extends Component {
 	}
 	handleClick(e){
 		e.preventDefault();
-		this.setState({view: e.currentTarget.dataset.currenthook});
+		debugger
+		this.setState({view: e.currentTarget.id});
 	}
 }
 

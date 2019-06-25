@@ -1,139 +1,143 @@
 .App {
   text-align: center;
   background: url(./img/skyline.png) no-repeat;
-  /*height: 100vh;*/
+  height: 100vh;
   background-size: cover;
 }
+
 
 .cls-1{fill:#009098;}
 .cls-2{fill:#033;}
 .cls-3{fill:#c0dee0;}
 .cls-4{fill:#484848;}
 .cls-5{fill:#ccc;}
+.cls-8{fill:#033;}
+.cls-7{fill:#ec019e;}
+
 .eye-inner{fill:#ccc;}
 .eye-outer{fill:#5c5c5c;}
 
-.Logo-Container {
-  display: flex;
-  background-size: 100%;
-  flex-direction: row;
+
+.Menu-Container-Item{
+  width: 100%; 
 }
 
-.Menu {
-  width: 25%;
+.gallery {
+  background-color: black;
+  display: flex;
+  margin: 0 auto;
+}
+
+.gallery-pics {
+  width: 75%;
+  height: auto;
+}
+
+.Logo-Container{
+  /*height: 100vh;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header{
+
+}
+
+.header-div{
+
+}
+
+.Logo-Container-Div {
+/*    height: 100%;*/
+    width: 100%;
+    margin: 0 auto;
+    /*padding: 2em;*/
+}
+
+.Menu-Container{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.Menu-button-box {
-  height: 50vh;
+.Menu-Container-Item{
+  width: 100%; 
 }
 
-.AboutMe-container{
-  color: black;
-}
 
-.Logo-Box {
-    height: 100%;
-    /*width: 41em;*/
-    width: 100%;
-    margin: auto;
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+   .Menu-Container{
+    display: flex;
+    flex-direction: row;
+  }
+  .Logo-Container{
+    height: 25%;
+  }
+  .Logo-Container-Div{
+    width: 30%;
     padding: 2em;
-}
-
-
-#hex1 {
-  width: 75px;
-  height: 75px;
-}
-
-#color1 {
-  background-color: #39D; 
-}
-
-#color2 {
-  background-color: #93D;
-}
-
-#color3 {
-  background-color: #D93;
-}
-
-.hexagon-wrapper {
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  margin: 20px;
-  position: relative;
-  display: inline-block;
-}
-
-.hexagon-wrapper-paragrapgh {
-  z-index: 2;
-  position: relative;
-  top: 12%;
-  font-size: 2em;
-  transition: all .2s ease-in-out;
-}
-
-.hexagon {
-  height: 100%;
-  width: calc(100% * 0.57735);
-  display: inline-block;
-}
-
-.hexagon-wrapper-paragrapgh:hover{
-  transform: scale(1.1);
-  text-shadow:0px 0px 30px #fdec6e;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-
-
-.hexagon:before {
-  position: absolute;
-  top: 0;
-  right: calc((100% / 2) - ((100% * 0.57735) / 2));
-  background-color: inherit;
-  height: inherit;
-  width: inherit;
-  content: '';
-  transform: rotateZ(60deg);
-}
-
-.hexagon:after {
-  position: absolute;
-  top: 0;
-  right: calc((100% / 2) - ((100% * 0.57735) / 2));
-  background-color: inherit;
-  height: inherit;
-  width: inherit;
-  content: '';
-  transform: rotateZ(-60deg);
-}
-
-.menu-container {
-  height: 100vh;
-  display: inline-block;
-}
-
-
-@media (min-width: 768px){
-  #About {    
-    -webkit-transform: rotate(-115deg) translate(14em) rotate(115deg);
-    transform: rotate(-115deg) translate(14em) rotate(115deg);
   }
-  #Contact{
-    -webkit-transform: rotate(-90deg) translate(10em) rotate(90deg);
-    transform: rotate(-90deg) translate(2em) rotate(90deg);
+  .Menu-Container-Item{
+    position: absolute;
+    width: 15%;
   }
-  #Gallery{
-    -webkit-transform: rotate(115deg) translate(-14em) rotate(-115deg);
-    transform: rotate(115deg) translate(-14em) rotate(-115deg);
-  } 
+  #media {
+    right: 20%;
+    top: 51%
+  }
+  #about{
+    left: 20%;
+    top: 51%
+  }
+  #contact{
+
+  }
 }
+
+@media (min-width: 979px) and (max-width: 1199px) { 
+   .Menu-Container{
+    display: flex;
+    flex-direction: row;
+  }
+  .Menu-Container-Item{
+    width: 25%;
+  }
+  .Logo-Container-Div{
+    width: 40%;
+    padding: 0em;
+  }
+ }
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+   .Menu-Container{
+    display: flex;
+    flex-direction: row;
+  }
+  .Menu-Container-Item{
+    width: 33.33%;
+  }
+  .Logo-Container-Div{
+    width: 40%;
+    padding: 0em;
+  }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+/* your code */
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+/* your code */
+ }
+
+
+
+
 

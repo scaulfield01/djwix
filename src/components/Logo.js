@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import TweenLite from "gsap/TweenMax";
 
 class Logo extends Component {
+
 	componentDidMount() {
 		var svg = document.querySelector("#svg");
 		var mouse = svg.createSVGPoint();
@@ -67,7 +68,7 @@ class Logo extends Component {
   render () {
     return (
     	<div className="Logo-Container">
-		    <div className="Logo-Box">
+		    <div className="Logo-Container-Div">
 		      <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 923.13 799.45">
 	      		<defs>
 		      	</defs>
