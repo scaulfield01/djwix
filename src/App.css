@@ -1,33 +1,143 @@
 .App {
   text-align: center;
+  background: url(./img/skyline.png) no-repeat;
+  height: 100vh;
+  background-size: cover;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+.cls-1{fill:#009098;}
+.cls-2{fill:#033;}
+.cls-3{fill:#c0dee0;}
+.cls-4{fill:#484848;}
+.cls-5{fill:#ccc;}
+.cls-8{fill:#033;}
+.cls-7{fill:#ec019e;}
+
+.eye-inner{fill:#ccc;}
+.eye-outer{fill:#5c5c5c;}
+
+
+.Menu-Container-Item{
+  width: 100%; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gallery {
+  background-color: black;
+  display: flex;
+  margin: 0 auto;
+}
+
+.gallery-pics {
+  width: 75%;
+  height: auto;
+}
+
+.Logo-Container{
+  /*height: 100vh;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header{
+
+}
+
+.header-div{
+
+}
+
+.Logo-Container-Div {
+/*    height: 100%;*/
+    width: 100%;
+    margin: 0 auto;
+    /*padding: 2em;*/
+}
+
+.Menu-Container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Menu-Container-Item{
+  width: 100%; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+   .Menu-Container{
+    display: flex;
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+  .Logo-Container{
+    height: 25%;
+  }
+  .Logo-Container-Div{
+    width: 30%;
+    padding: 2em;
+  }
+  .Menu-Container-Item{
+    position: absolute;
+    width: 15%;
+  }
+  #media {
+    right: 20%;
+    top: 51%
+  }
+  #about{
+    left: 20%;
+    top: 51%
+  }
+  #contact{
+
   }
 }
+
+@media (min-width: 979px) and (max-width: 1199px) { 
+   .Menu-Container{
+    display: flex;
+    flex-direction: row;
+  }
+  .Menu-Container-Item{
+    width: 25%;
+  }
+  .Logo-Container-Div{
+    width: 40%;
+    padding: 0em;
+  }
+ }
+
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+   .Menu-Container{
+    display: flex;
+    flex-direction: row;
+  }
+  .Menu-Container-Item{
+    width: 33.33%;
+  }
+  .Logo-Container-Div{
+    width: 40%;
+    padding: 0em;
+  }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+/* your code */
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+/* your code */
+ }
+
+
+
+
+
